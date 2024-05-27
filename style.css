@@ -1,0 +1,260 @@
+:root {
+  --bg: #fff;
+  --fonte: #000;
+  --cor__secundaria: #9A00D6;
+  --fonte__secundaria: "Edu TAS Beginner", cursive;
+  --fonte__primaria: Chakra Petch;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+  gap: 10px;
+  height: 52px;
+  justify-content: center;
+  line-height: normal;
+  padding: 16px 24px;
+  text-align: center;
+  width: 208px;
+}
+
+.content {
+  box-shadow: 0px 0px 50px 10px #000000;
+  padding: 50px 40px;
+  max-width: 1920px;
+  width: 70vw;
+  min-height: 600px;
+  height: 70vh;
+}
+
+.content__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.friends__container {
+  align-items: center;
+  border: 1px solid var(--cor__secundaria);
+  border-radius: 8px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.friends__container>p {
+  color: #000;
+  font-size: 25px;
+  font-family: var(--fonte__secundaria);
+  line-height: 160%;
+}
+
+.friends__title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
+  font-family: var(--fonte__primaria);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+  font-style: normal;
+}
+
+.form__buttons {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
+.form__input {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--cor__secundaria);
+  border-radius: 8px;
+  color: #000;
+  display: flex;
+  font-size: 21px;
+  font-weight: 400;
+  height: 56px;
+  margin-bottom: 32px;
+  outline: none;
+  padding: 8px 16px;
+  width: 90%;
+}
+
+.form__input::placeholder {
+  color: #000;
+  font-size: 21px;
+}
+
+.form__label {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+
+.form__link {
+  width: 100%;
+  text-decoration: none;
+  font-size: 21px;
+  color: #000;
+  font-weight: 700;
+  transition: 400ms;
+}
+
+.form__link:hover {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+
+.prizeDraw__container {
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 160%;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 40%;
+}
+
+.section--results {
+  width: 40%;
+}
+
+.section__title {
+  color: #000;
+  font-family: Chakra Petch;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+}
+
+.section__title>span {
+  color: var(--cor__secundaria);
+  font-family: var(--fonte__secundaria);
+}
+
+.secondary {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+
+.secondary::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  background: rgb(154, 0, 214);
+  background: linear-gradient(60deg, rgba(154, 0, 214, 1) 7%, rgba(63, 248, 252, 1) 100%);
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 400ms ease-in;
+}
+
+.secondary:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+  transition: transform 0.4s ease-in;
+}
+
+h1 {
+  margin: 0;
+}
+
+.article__h1 {
+  font-family: var(--fonte__secundaria);
+  color: #fff;
+  text-align: center;
+}
+
+.mascara {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 45vw;
+  min-height: 100vh;
+  background: rgb(154, 0, 214);
+  background: linear-gradient(60deg, rgba(154, 0, 214, 1) 7%, rgba(63, 248, 252, 1) 100%);
+  border-radius: 20% 0 0 20%;
+}
+
+.primary {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  background-size: 300% 100%;
+  border-radius: 1.5rem;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(to right, rgba(154, 0, 214, 1), rgba(63, 248, 252, 1), rgba(63, 248, 252, 1), rgba(154, 0, 214, 1));
+}
+
+.primary:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition:
+    all .4s ease-in-out;
+}
+
+.linha {
+  margin: 20px 0;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 100%;
+}
